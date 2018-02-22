@@ -1,3 +1,8 @@
+https://www.youtube.com/watch?v=yWs2xceNCh0
+
+*ON TIME: 25:00
+
+______________________________________________________________________________
 https://github.com/niltonfjr086/ionic_sqlite.git
 
 …or create a new repository on the command line
@@ -8,16 +13,24 @@ git commit -m "first commit"
 git remote add origin https://github.com/niltonfjr086/ionic_sqlite.git
 git push -u origin master
 
-
-
 …or push an existing repository from the command line
 git remote add origin https://github.com/niltonfjr086/ionic_sqlite.git
 git push -u origin master
 
 
-
-
+______________________________________________________________________________
 https://ionicframework.com/docs/native/sqlite/
 
 ionic cordova plugin add cordova-sqlite-storage
 npm install --save @ionic-native/sqlite
+
+**verificar/realizar alterações no app.module.ts
+______________________________________________________________________________
+ionic cordova platform add android
+______________________________________________________________________________
+ionic g provider database
+ionic g provider product
+ionic g provider category
+ionic g page edit-product
+
+**verificar/realizar alterações no providers/database.ts
