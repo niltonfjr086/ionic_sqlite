@@ -13,3 +13,11 @@ git push -u origin master
 …or push an existing repository from the command line
 git remote add origin https://github.com/niltonfjr086/ionic_sqlite.git
 git push -u origin master
+
+
+
+
+https://ionicframework.com/docs/native/sqlite/
+
+ionic cordova plugin add cordova-sqlite-storage
+npm install --save @ionic-native/sqlite
