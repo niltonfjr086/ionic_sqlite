@@ -72,13 +72,28 @@ export class ProductProvider {
 
   public getAll(active: boolean, name: string = null) {
     return this.dbProvider.getDB()
-      // .then((db: SQLiteObject) => {
-      //   let sql = 'DELETE FROM products WHERE id = ?';
-      //   let data = [id];
+      .then((db: SQLiteObject) => {
+        let sql = 'SELECT p.*, c.name as category_name FROM products p INNER JOIN categories c ON p.category_id = c.id WHERE p.active = ?';
+        let data: any[] = [(active ? 0 : 1)];
 
-      //   return db.executeSql(sql, data).catch((e) => { console.log(e) });
-      // })
-      // .catch((e) => { console.log(e) })
+        if (name) {
+          sql += ' AND p.name LIKE ?';
+          data.push(name);
+        }
+
+        return db.executeSql(sql, data)
+          .then((data: any) => {
+            if (data.rows.length > 0) {
+              let products: any[] = [];
+              
+            } else {
+              return [];
+            }
+
+          })
+          .catch((e) => { console.log(e) });
+      })
+      .catch((e) => { console.log(e) })
   }
 
 }

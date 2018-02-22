@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=yWs2xceNCh0
 
-*ON TIME: 25:00
+*ON TIME: 27:00
 
 ______________________________________________________________________________
 https://github.com/niltonfjr086/ionic_sqlite.git
@@ -17,6 +17,8 @@ git push -u origin master
 git remote add origin https://github.com/niltonfjr086/ionic_sqlite.git
 git push -u origin master
 
+..if exists you have to clone first?
+git...
 
 ______________________________________________________________________________
 https://ionicframework.com/docs/native/sqlite/
