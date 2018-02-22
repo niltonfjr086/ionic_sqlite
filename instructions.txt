@@ -1,0 +1,15 @@
+https://github.com/niltonfjr086/ionic_sqlite.git
+
+…or create a new repository on the command line
+echo "# ionic_sqlite" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/niltonfjr086/ionic_sqlite.git
+git push -u origin master
+
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/niltonfjr086/ionic_sqlite.git
+git push -u origin master
