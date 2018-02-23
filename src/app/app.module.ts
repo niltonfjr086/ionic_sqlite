@@ -31,9 +31,9 @@ import { CategoryProvider } from '../providers/category/category';
   providers: [
     StatusBar,
     SplashScreen,
+    { provide: LOCALE_ID, useValue: 'pt-BR' },
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     SQLite,
-    { provide: LOCALE_ID, useValue: 'pt-BR' },
     DatabaseProvider,
     ProductProvider,
     CategoryProvider
