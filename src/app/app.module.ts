@@ -12,6 +12,7 @@ import { DatabaseProvider } from '../providers/database/database';
 import { ProductProvider } from '../providers/product/product';
 import { CategoryProvider } from '../providers/category/category';
 
+import { FormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CategoryProvider } from '../providers/category/category';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
