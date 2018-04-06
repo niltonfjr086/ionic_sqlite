@@ -16,8 +16,13 @@
       <button ion-item (click)="editProduct(product.id)">
         <h1>{{ product.name }}</h1>
         <h2>{{ product.category_name }}</h2>
-        <h2>{{ product.duedate | date:'dd/MM/yyyy' }}</h2>
-        <h2 class="price">{{ product.price | currency:'BRL':true }}</h2>
+
+        <!-- <h2>{{ product.duedate | date:'dd/MM/yyyy' }}</h2> -->
+        <h2>{{ product.duedate }}</h2>
+
+        <!-- <h2 class="price">{{ product.price | currency:'BRL':'R$' }}</h2> -->
+        <h2 class="price">{{ product.price }}</h2>
+
       </button>
 
       <ion-item-options side="left">
