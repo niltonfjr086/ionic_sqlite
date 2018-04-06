@@ -22,7 +22,8 @@ export class DatabaseProvider {
         this.createTables(db);
         this.insertDefaultItems(db);
       })
-      .catch(e => { console.error(e) })
+      .catch(e => {
+        console.error(e) })
 
   }
 
@@ -36,6 +37,7 @@ export class DatabaseProvider {
   }
 
   private insertDefaultItems(db: SQLiteObject) {
+    console.log('insertDefaultItems');
     db.executeSql('SELECT COUNT(id) as qtd FROM categories', {})
       .then((data: any) => {
 

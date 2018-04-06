@@ -6,7 +6,7 @@ import { DatabaseProvider } from '../database/database';
 export class CategoryProvider {
 
   constructor(private dbProvider: DatabaseProvider) {
-
+    console.log('CategoryProvider constructor');
   }
 
   public get(id: number) {
@@ -23,7 +23,7 @@ export class CategoryProvider {
               category.id = item.id;
               category.name = item.name;
               
-              // return product;
+              return category;
             }
 
             return null;
@@ -45,9 +45,10 @@ export class CategoryProvider {
 
               for (var i = 0; i < data.rows.length; i++) {
                 var category = data.rows.item(i);
+                console.log(category);
                 categories.push(category);
               }
-              
+              console.log(categories);
               return categories;
             } else {
               return [];

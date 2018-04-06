@@ -20,9 +20,11 @@ export class MyApp {
 
       dbProvider.createDataBase()
         .then(() => {
+          console.log('createDataBase | then');
           this.openHomePage(splashScreen);
         })
         .catch(() => {
+          console.log('createDataBase | catch');
           this.openHomePage(splashScreen);
         })
     });
